@@ -5,19 +5,26 @@ box-sizing: border-box;
 }
 
 nav {
-    color: white;
-    background-color: darkblue;
-    padding: 10px;
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
-    display: inline-block;
-    padding: 10px 20px;
+    display: block;
+    padding: 0.5rem;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
-h1 {color: darkblue;
+h1 {
+    color: steelblue;
+    border: #333;
+    margin-bottom: 15px;
 }
 
 img {
@@ -25,68 +32,82 @@ img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 15px gray;
 }
 
 p{
-    padding: 0;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 32% 65%;
+    gap: 3%;
+    align-items: start;
+    margin-top: 20px;
 }
 
 main {
-    max-width: 960px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px;
+    grid-column: 2;
+    
 }
 
 aside {
-    width: 20rem;
-    color: #333;
-    text-align: center;
-    position: relative
+    grid-column: 1;
 }
 
 aside img {
-    width: 200px;
+    width: 100px;
+    max-width: 220px;
     height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
 }
 
 aside h2{
-    position: absolute;
-    top: 0;
-    left: 120px
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 main img {
     margin-left: 20px;
-    margin-bottom: 20px;
-    width: 150px;
+    margin-bottom: 10px;
+    width: 180px;
     height: auto;
     float: right ;
 }
 
-footer{
-    margin-top: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
+header, footer, .grid{
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 /* Seletores de Classe */ 
 
 .caixa{
     clear: both;
-    border: 1px solid rgba(0, 0, 0,0.2);
-    padding: 1rem;
-    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0,0.15);
+    padding: 1.2rem;
+    border-radius: #fff;
     background-color: #eee;
 }
 
 .indentacao{
-    padding-left: 2rem;
+    margin-bottom: 15px;
 }
 
 body{
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
+}
+
+footer{
+    margin-top: 30px;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    text-align: 0.9rem;
+    color: #666;
 }

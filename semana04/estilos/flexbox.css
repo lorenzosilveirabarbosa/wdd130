@@ -8,6 +8,9 @@ body {
     background-color: lightyellow;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .flex-item {
@@ -17,6 +20,8 @@ body {
     padding: 0.5rem;
     background-color: #bbb;
     color: #333;
+    justify-content: center;
+    align-items: center;
 }
 
 .item1 {
