@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Companhia de Rafting em Corredeiras</title>
+    <meta name="description"
+        content="Entre em contato com a Companhia de Rafting em Corredeiras. Tire suas dúvidas, faça uma reserva ou envie sugestões para a sua próxima aventura.">
+    <meta name="author" content="Lorenzo Silveira Barbosa">
+
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="imagens/logo.png" alt="Logotipo Rafting Aventura">
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="viagens.html">Viagens</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="info-empresa">
+            <h1>Companhia de Rafting em Corredeiras</h1>
+            <p>147 Tuffy Abussamra</p>
+            <p>Sorocaba, São Paulo</p>
+            <p><strong>Telefone:</strong> +55 45 99999-9999</p>
+            <p><strong>E-mail:</strong> info@correiras.com</p>
+        </section>
+
+        <section class="contato-container">
+
+            <div class="mapa-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.926350258694!2d-47.48049702467287!3d-23.463120978867433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f5107215d8f3%3A0x1c46096cff39c215!2sRua%20Tuffy%20Abussamra%2C%20147%20-%20Jardim%20Maria%20Ant%C3%B4nia%20Prado%2C%20Sorocaba%20-%20SP%2C%2018076-020!5e0!3m2!1spt-BR!2sbr!4v1781050250089!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form action="#" method="POST" class="formulario-contato">
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite aqui" required>
+                </div>
+
+                <div class="campo-radio">
+                    <label>Propósito da Mensagem</label>
+                    <div class="opcoes-radio">
+                        <label>
+                            <input type="radio" name="proposito" value="duvida" checked> Dúvida Geral
+                        </label>
+                        <label>
+                            <input type="radio" name="proposito" value="reserva"> Pergunta sobre Reserva
+                        </label>
+                        <label>
+                            <input type="radio" name="proposito" value="sugestao"> Sugestão
+                        </label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite aqui" rows="5" required></textarea>
+                </div>
+
+                <div class="campo-checkbox">
+                    <label>
+                        <input type="checkbox" name="newsletter"> Por favor, me inscreva na newsletter mensal
+                    </label>
+                </div>
+
+                <button type="submit">Entrar em Contato!</button>
+            </form>
+
+        </section>
+
+        <section class="servicos-rodape">
+            <h2>Estamos Aqui para Servi-lo</h2>
+            <div class="funcionarios-grid">
+                <div class="perfil-funcionario">
+                    <img src="imagens/funcionario1.jpeg" alt="Perfil do Funcionário 1">
+                    <p>Melissa é uma de nossas instrutoras, ela quem estará com você ao longo do seu passerio</p>
+                </div>
+                <div class="perfil-funcionario">
+                    <img src="imagens/funcionario2.jpeg" alt="Perfil do Funcionário 2">
+                    <p>Lorenzo é nosso instrutor com 5 anos de experiência</p>
+                </div>
+                <div class="perfil-funcionario">
+                    <img src="imagens/funcionario3.jpeg" alt="Perfil do Funcionário 3">
+                    <p>Jubileu é o cofundador da empresa</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav class="redes-sociais">
+            <a href="https://facebook.com">
+                <img src="imagens/facebook.svg" alt="Ícone do Facebook">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="imagens/linkedin.svg" alt="Ícone do LinkedIn">
+            </a>
+            <a href="https://instagram.com">
+                <img src="imagens/instagram.svg" alt="Ícone do Instagram">
+            </a>
+        </nav>
+        <p>&copy; 2026 - Todos os direitos reservados | Rio Abaixo Rafting | Lorenzo Barbosa</p>
+    </footer>
+
+</body>
+
+</html>

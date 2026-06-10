@@ -162,5 +162,172 @@ nav{
     padding: 10px 5px;
     font-size: 0.9rem;
     font-weight: bold;
-    color: var(branco);    
+    color: white;    
+}
+
+.info-empresa {
+    text-align: center;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.info-empresa h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333; 
+}
+
+.info-empresa p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+
+.contato-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+}
+
+
+.mapa-container, 
+.formulario-contato {
+    flex: 1 1 450px; 
+}
+
+.mapa-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label,
+.campo-radio > label {
+    font-weight: bold;
+    color: #444;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+
+.campo-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opcoes-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.opcoes-radio label,
+.campo-checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+
+.formulario-contato button[type="submit"] {
+    background-color: #ff5722; 
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contato button[type="submit"]:hover {
+    background-color: #e64a19; 
+}
+
+.formulario-contato button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+
+.servicos-rodape {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    margin-top: 40px;
+}
+
+.servicos-rodape h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+
+.funcionarios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.perfil-funcionario {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.perfil-funcionario img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.perfil-funcionario p {
+    margin: 5px 0;
+}
+
+.perfil-funcionario .cargo {
+    font-size: 0.95rem;
+    color: #666;
+    font-style: italic;
 }
