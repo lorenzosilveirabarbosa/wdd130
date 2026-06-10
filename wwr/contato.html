@@ -55,17 +55,21 @@
                 </div>
 
                 <div class="campo-radio">
-                    <label>Propósito da Mensagem</label>
+                    <!-- Label principal do grupo -->
+                    <span class="label-grupo">Propósito da Mensagem</span>
                     <div class="opcoes-radio">
-                        <label>
-                            <input type="radio" name="proposito" value="duvida" checked> Dúvida Geral
-                        </label>
-                        <label>
-                            <input type="radio" name="proposito" value="reserva"> Pergunta sobre Reserva
-                        </label>
-                        <label>
-                            <input type="radio" name="proposito" value="sugestao"> Sugestão
-                        </label>
+                        <div class="opcao-item">
+                            <input type="radio" id="proposito-consulta" name="proposito" value="consulta" checked>
+                            <label for="proposito-consulta">Consulta Geral</label>
+                        </div>
+                        <div class="opcao-item">
+                            <input type="radio" id="proposito-reserva" name="proposito" value="reserva">
+                            <label for="proposito-reserva">Pergunta sobre Reserva</label>
+                        </div>
+                        <div class="opcao-item">
+                            <input type="radio" id="proposito-sugestao" name="proposito" value="sugestao">
+                            <label for="proposito-sugestao">Sugestão de Site</label>
+                        </div>
                     </div>
                 </div>
 
@@ -75,9 +79,8 @@
                 </div>
 
                 <div class="campo-checkbox">
-                    <label>
-                        <input type="checkbox" name="newsletter"> Por favor, me inscreva na newsletter mensal
-                    </label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Quero receber a newsletter mensal</label>
                 </div>
 
                 <button type="submit">Entrar em Contato!</button>
