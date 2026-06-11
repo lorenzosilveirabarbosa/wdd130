@@ -343,3 +343,21 @@ nav {
     color: #666;
     font-style: italic;
 }
+
+.container-passeios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card-passeio {
+    flex: 1 1 calc(33.333% - 20px); /* Deixa os 3 cards um ao lado do outro em telas grandes */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .card-passeio {
+        flex: 1 1 100%; /* Fica em coluna única apenas no celular */
+    }
+}
